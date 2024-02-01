@@ -9,17 +9,15 @@
 /* Begin PBXBuildFile section */
 		647341992B6BCBB500A51108 /* ihearuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647341982B6BCBB500A51108 /* ihearuApp.swift */; };
 		6473419B2B6BCBB500A51108 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6473419A2B6BCBB500A51108 /* ContentView.swift */; };
-		6473419D2B6BCBBB00A51108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6473419C2B6BCBBB00A51108 /* Assets.xcassets */; };
-		647341A02B6BCBBB00A51108 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6473419F2B6BCBBB00A51108 /* Preview Assets.xcassets */; };
+		647341AD2B6C1E4E00A51108 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647341AC2B6C1E4E00A51108 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		647341952B6BCBB500A51108 /* ihearu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ihearu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647341982B6BCBB500A51108 /* ihearuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ihearuApp.swift; sourceTree = "<group>"; };
 		6473419A2B6BCBB500A51108 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		6473419C2B6BCBBB00A51108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6473419F2B6BCBBB00A51108 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		647341A62B6C17DA00A51108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		647341AC2B6C1E4E00A51108 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Preview Assets.xcassets"; path = "../../../../../Documents/GitHub/psuade/psuade/Preview Content/Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +53,6 @@
 				647341A62B6C17DA00A51108 /* Info.plist */,
 				647341982B6BCBB500A51108 /* ihearuApp.swift */,
 				6473419A2B6BCBB500A51108 /* ContentView.swift */,
-				6473419C2B6BCBBB00A51108 /* Assets.xcassets */,
 				6473419E2B6BCBBB00A51108 /* Preview Content */,
 			);
 			path = ihearu;
@@ -64,7 +61,7 @@
 		6473419E2B6BCBBB00A51108 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				6473419F2B6BCBBB00A51108 /* Preview Assets.xcassets */,
+				647341AC2B6C1E4E00A51108 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -127,8 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				647341A02B6BCBBB00A51108 /* Preview Assets.xcassets in Resources */,
-				6473419D2B6BCBBB00A51108 /* Assets.xcassets in Resources */,
+				647341AD2B6C1E4E00A51108 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +267,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ihearu/Preview Content\"";
@@ -302,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ihearu/Preview Content\"";

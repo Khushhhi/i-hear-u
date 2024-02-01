@@ -14,11 +14,7 @@ class ShazamManager: NSObject, ObservableObject, SHSessionDelegate {
     var session: SHSession
     var audioEngine: AVAudioEngine
     var isListening = false
-    var songTitle: String = "" {
-        didSet {
-            // Update your UI accordingly
-        }
-    }
+    var songTitle: String = ""
     
     override init() {
         session = SHSession()
@@ -86,12 +82,13 @@ struct ContentView: View {
                 #colorLiteral(red: 0.9756619334, green: 0.9494382739, blue: 0.9180981517, alpha: 1)
                 //F7EFE5
             )
+            
             VStack(spacing: 16) {
                 Text("ihearu 🎧")
                     .font(.system(size: 50, design: .rounded))
                     .fontWeight(.semibold)
-                    .padding(.trailing, 150)
-                    .padding(.bottom, 110)
+//                    .padding(.trailing, 150)
+                    .padding(.bottom, 50)
                 
                 Button(action: {
                     isAnimating.toggle()
@@ -146,16 +143,10 @@ struct ContentView: View {
 //            .onAppear {
 //                shazamManager.session.delegate = self
 //            }
-            
         }
         .edgesIgnoringSafeArea(.all)
-        
     }
-    
-
 }
-
-
 
 struct SongCardView: View {
     @Binding var songTitle: String
