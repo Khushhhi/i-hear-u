@@ -161,14 +161,31 @@ struct SongCardView: View {
     @Binding var songTitle: String
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Image(systemName: "waveform")
-                .imageScale(.large)
-                .bold()
-            Text("Now Playing")
-                .font(.headline)
-            Text(songTitle)
-                .font(.title2)
+        VStack {
+            Spacer()
+            
+            ZStack {
+                Image(systemName: "waveform")
+                    .font(.system(size: 50))
+                    .foregroundColor(.white)
+                    .padding(.bottom, 30)
+                
+                VStack(alignment: .leading) {
+                    Spacer()
+                    
+                    Text("Now Playing")
+                        .bold()
+                        .foregroundColor(.white)
+                        .padding(.leading)
+                    
+                    Text(songTitle)
+                        .font(.title2)
+                        .foregroundColor(.white)
+                        .bold()
+                        .padding(.leading)
+                        .padding(.bottom)
+                }
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: 180)
         .background(Color(#colorLiteral(red: 0.9506475329, green: 0.5670107603, blue: 0.2467300296, alpha: 1)))

@@ -19,6 +19,7 @@
 		6473419A2B6BCBB500A51108 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6473419C2B6BCBBB00A51108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6473419F2B6BCBBB00A51108 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		647341A62B6C17DA00A51108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		647341972B6BCBB500A51108 /* ihearu */ = {
 			isa = PBXGroup;
 			children = (
+				647341A62B6C17DA00A51108 /* Info.plist */,
 				647341982B6BCBB500A51108 /* ihearuApp.swift */,
 				6473419A2B6BCBB500A51108 /* ContentView.swift */,
 				6473419C2B6BCBBB00A51108 /* Assets.xcassets */,
@@ -275,6 +277,8 @@
 				DEVELOPMENT_TEAM = DANSQW84JP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ihearu/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires microphone access to recognize music playing nearby.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +308,8 @@
 				DEVELOPMENT_TEAM = DANSQW84JP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ihearu/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires microphone access to recognize music playing nearby.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
