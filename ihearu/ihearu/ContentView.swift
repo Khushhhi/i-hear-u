@@ -88,7 +88,7 @@ struct ContentView: View {
                     .font(.system(size: 50, design: .rounded))
                     .fontWeight(.semibold)
 //                    .padding(.trailing, 150)
-                    .padding(.bottom, 50)
+                    .padding(.bottom, 120)
                 
                 Button(action: {
                     isAnimating.toggle()
