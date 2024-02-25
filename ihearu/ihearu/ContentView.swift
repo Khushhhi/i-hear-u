@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  ihearu
-//
-//  Created by khushi mittal on 01/02/24.
-//
 
 import SwiftUI
 import ShazamKit
