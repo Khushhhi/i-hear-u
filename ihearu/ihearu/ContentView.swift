@@ -14,7 +14,8 @@ class ShazamManager: NSObject, ObservableObject, SHSessionDelegate {
     var session: SHSession
     var audioEngine: AVAudioEngine
     var isListening = false
-    var songTitle: String = ""
+    @Published var songTitle: String = "Listening..."
+    
     
     override init() {
         session = SHSession()
@@ -26,8 +27,10 @@ class ShazamManager: NSObject, ObservableObject, SHSessionDelegate {
     // Implement SHSessionDelegate methods here
     func session(_ session: SHSession, didFind match: SHMatch) {
         // Handle match
-        if let item = match.mediaItems.first {
-            songTitle = item.title ?? "Unknown Song"
+        DispatchQueue.main.async { // Ensure UI updates on main thread
+            if let item = match.mediaItems.first {
+                self.songTitle = item.title ?? "Unknown Song"
+            }
         }
     }
     
@@ -125,12 +128,11 @@ struct ContentView: View {
                     
                 })
                 
-                if !songTitle.isEmpty {
+                if !shazamManager.songTitle.isEmpty {
                     GeometryReader { geometry in
                         VStack {
                             Spacer()
-                            SongCardView(songTitle: $songTitle)
-                                .padding(.top, 10)
+                            SongCardView(songTitle: $shazamManager.songTitle)   .padding(.top, 10)
                                 .padding(.bottom, 15)
                                 .cornerRadius(geometry.safeAreaInsets.bottom == 0 ? 35 : geometry.safeAreaInsets.bottom)
                         }
